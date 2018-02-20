@@ -1,8 +1,10 @@
 
 const emojis = require('./../dist/emoji-category.json');
 
-module.exports = {
+const EmojiCategory = {
     get: function () {
         return emojis;
     }
 };
+
+window.EmojiCategory = module.exports = EmojiCategory;
