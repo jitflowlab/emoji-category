@@ -70,11 +70,13 @@
 
 const emojis = __webpack_require__(1);
 
-module.exports = {
+const EmojiCategory = {
     get: function () {
         return emojis;
     }
 };
+
+window.EmojiCategory = module.exports = EmojiCategory;
 
 
 /***/ }),
